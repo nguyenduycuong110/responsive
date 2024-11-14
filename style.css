@@ -1,0 +1,80 @@
+
+*{
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+.row::after{
+    clear: both;
+    content: "";
+}
+/* for smartphone*/
+[class*="col-"]{
+    width: 100%;
+}
+/* for tablet*/
+@media only screen and (min-width: 700px){
+    .col-s-1{width: 8.33%;}
+    .col-s-2{width: 16.66%;}
+    .col-s-3{width: 25%;}
+    .col-s-4{width: 33.33%;}
+    .col-s-5{width: 41.66%;}
+    .col-s-6{width: 50%;}
+    .col-s-7{width: 58.33%;}
+    .col-s-8{width: 66.66%;}
+    .col-s-9{width: 75%;}
+    .col-s-10{width: 83.33%;}
+    .col-s-11{width: 91.66%;}
+    .col-s-12{width: 100%;}
+}
+/* for computer*/
+@media only screen and (min-width: 900px) {
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;} 
+}
+.header{
+    background-color: rgb(206, 72, 195);
+    padding: 15px;
+    color: white;
+}
+.footer{
+    background-color: rgb(206, 72, 195);
+    font-size: 20px;
+    padding: 10px;
+    clear: both;
+    text-align: center;
+    color: white;
+}
+.menu ul{
+    padding: 0px;
+    margin: 0;
+    list-style-type: none;
+    padding: 15px;
+}
+.menu li{
+    background-color: rgb(55, 136, 230);
+    padding: 15px;
+    margin: 5px 0;
+    color: white;
+}
+.menu li:hover{
+    background-color: rgb(36, 91, 155);
+}
+.right{
+    background-color: rgb(55, 136, 230);
+    text-align: center;
+    color: white;
+}
